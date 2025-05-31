@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>IPO Info Portal - Bluestock Fintech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand fw-bold text-primary" href="#">Bluestock Fintech</a>
+  
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+      <li class="nav-item"><a class="nav-link" href="dashboard.html">IPO Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="ipo-form.html">Register IPO</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+<!--main section-->
+<div class="flex-fill p-4">
+
+  <!-- IPO Subscription Section -->
+  <div id="subscriptionSection" class="page-section" style="display: none;">
+    <h5 class="fw-bold mb-3">IPO Subscription</h5>
+    <p>Subscription info will go here.</p>
+  </div>
+
+  <!-- Manage IPO Section -->
+<div id="manageIpoSection" class="page-section" style="display: none;">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="fw-bold">Upcoming IPO | Dashboard</h5>
+    <!-- This button only appears when Manage IPO section is shown -->
+    <a href="ipo-form.html" class="btn btn-outline-primary btn-sm">Register IPO</a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center">
+      <thead class="table-light">
+        <tr>
+          <th>Company</th><th>Price Band</th><th>Open</th><th>Close</th>
+          <th>Issue Size</th><th>Issue Type</th><th>Listing Date</th><th>Status</th><th>Action</th><th>Delete/View</th>
+        </tr>
+      </thead>
+      <tbody id="ipoTableBody">
+        <!-- JS populates data here -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  
+  <!-- IPO Allotment Section -->
+  <div id="allotmentSection" class="page-section" style="display: none;">
+    <h5 class="fw-bold mb-3">IPO Allotment</h5>
+    <p>Allotment details will go here.</p>
+  </div>
+
+</div>
+
+<!-- Hero Section -->
+<section class="hero bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-5">Track, Analyze & Download IPO Data</h1>
+    <p class="lead">Stay ahead with the latest IPO updates and listings.</p>
+    <a href="dashboard.html" class="btn btn-light btn-lg mt-3">Go to Dashboard</a>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="py-5" id="features">
+  <div class="container">
+    <h2 class="text-center mb-4">Features</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Live IPO Tracking</h5>
+        <p>Real-time status, prices, and listing dates.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Download RHP/DRHP</h5>
+        <p>Access company prospectus PDFs in one click.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Company Insights</h5>
+        <p>Get financial stats, performance, and returns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section class="bg-light py-5" id="contact">
+  <div class="container text-center">
+    <h4>Have Questions?</h4>
+    <p>Contact us at: <a href="mailto:support@bluestock.com">support@bluestock.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 Bluestock Fintech. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/NSE_Logo.svg" alt="NSE Logo" width="80">
+</body>
+</html>
